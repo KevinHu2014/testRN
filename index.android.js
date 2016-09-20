@@ -7,8 +7,11 @@ import {
   View
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-
+import SplashScreen from "rn-splash-screen";
 class testRN extends Component {
+  componentDidMount(){
+    SplashScreen.hide();
+  }
   render() {
     return (
       <View style={styles.container}>
